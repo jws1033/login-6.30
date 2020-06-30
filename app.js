@@ -7,7 +7,7 @@ var apiRouter = require('./routes/Router')
 const mongoose = require('mongoose');
 
 var pw = process.env.PASSWORD
-var url = `mongodb+srv://root:${pw}@cluster0-tecvg.mongodb.net/mydb_daejeon?retryWrites=true&w=majority`
+var url = `mongodb+srv://root:<password>@cluster0.kurve.mongodb.net/<dbname>?retryWrites=true&w=majority`
 mongoose.connect(url,{useNewUrlParser: true , useUnifiedTopology: true} )
 
 app.set('views' ,path.resolve(__dirname +'/views'))
